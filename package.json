@@ -1,0 +1,19 @@
+{
+  "name": "laila-khalil-couture",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --host",
+    "build": "vite build",
+    "preview": "vite preview --port 5173",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "three": "^0.174.0",
+    "lucide": "^0.475.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

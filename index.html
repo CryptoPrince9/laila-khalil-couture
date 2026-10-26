@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAILA KHALIL • Haute Couture & Bespoke 3D Atelier</title>
+  <meta name="description" content="Interactive 3D Animated Fashion Designer Website for Laila Khalil. Featuring Runway Collections, 3D Virtual Fitting Room, and Worldwide Wise & MetaMask Payment Gateways." />
+  
+  <!-- Tailwind CSS CDN for instant styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              DEFAULT: '#d4af37',
+              light: '#f5ecd7',
+              dark: '#997819',
+              amber: '#b38f2a'
+            },
+            noir: {
+              950: '#060608',
+              900: '#0a0a0e',
+              850: '#111116',
+              800: '#181820'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            display: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            modern: ['Syne', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body class="bg-[#07070a] text-neutral-200 antialiased selection:bg-[#d4af37] selection:text-black">
+
+  <!-- TOP LUXURY ANNOUNCEMENT TICKER -->
+  <div class="bg-gradient-to-r from-black via-[#16140b] to-black border-b border-[#d4af37]/25 text-[11px] py-1.5 px-4 text-center text-[#e8dcbd] flex items-center justify-between overflow-hidden">
+    <div class="hidden sm:flex items-center space-x-2 text-[10px] tracking-widest uppercase font-mono text-[#d4af37]">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#d4af37] animate-ping"></span>
+      <span>Autumn / Winter 2026 Collection</span>
+    </div>
+    <div class="mx-auto flex items-center space-x-3 text-center tracking-wider">
+      <span>Exquisite Hand-Tailored Bespoke • Worldwide Delivery via DHL Express</span>
+      <span class="hidden md:inline text-[#d4af37]/60">•</span>
+      <span class="hidden md:inline">Settlement via Wise Multi-Currency Wire & MetaMask Web3 Escrow</span>
+    </div>
+    <div class="hidden sm:flex items-center space-x-2">
+      <button class="open-designer-hub-btn text-[10px] text-[#d4af37] hover:underline font-mono uppercase tracking-wider flex items-center space-x-1">
+        <span>Designer Portal</span>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-40 bg-[#08080c]/90 backdrop-blur-xl border-b border-neutral-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Atelier Brand Logo -->
+      <a href="#" class="flex flex-col group">
+        <span class="font-display tracking-[0.3em] text-lg sm:text-xl font-bold text-white group-hover:text-[#d4af37] transition-colors">
+          LAILA KHALIL
+        </span>
+        <span class="font-serif italic text-[10px] tracking-[0.35em] text-[#d4af37] uppercase -mt-0.5">
+          H a u t e &nbsp; C o u t u r e
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest text-neutral-300 font-medium">
+        <a href="#runway" class="hover:text-[#d4af37] transition-colors">The Collection</a>
+        <a href="#interactive-3d" class="hover:text-[#d4af37] transition-colors flex items-center space-x-1">
+          <span>3D Atelier</span>
+          <span class="px-1.5 py-0.2 bg-[#d4af37]/20 text-[#d4af37] text-[9px] rounded font-mono">WebGL</span>
+        </a>
+        <a href="#craft" class="hover:text-[#d4af37] transition-colors">Textile Science</a>
+        <a href="#payment-methods" class="hover:text-[#d4af37] transition-colors">Wise & Web3</a>
+        <button class="open-designer-hub-btn hover:text-[#d4af37] transition-colors flex items-center space-x-1 text-amber-400/90">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>Designer Setup</span>
+        </button>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="flex items-center space-x-3">
+        
+        <!-- Ambient Catwalk Sound Toggle -->
+        <button id="sound-toggle-btn" class="p-2 sm:px-3 sm:py-1.5 rounded-full border border-neutral-700 bg-neutral-900/60 hover:border-[#d4af37] text-neutral-300 transition flex items-center space-x-2 text-xs" title="Toggle Runway Catwalk Audio">
+          <div class="flex items-end space-x-0.5 h-3">
+            <span class="eq-bar w-0.5 bg-[#d4af37] rounded-full"></span>
+            <span class="eq-bar w-0.5 bg-[#d4af37] rounded-full"></span>
+            <span class="eq-bar w-0.5 bg-[#d4af37] rounded-full"></span>
+            <span class="eq-bar w-0.5 bg-[#d4af37] rounded-full"></span>
+          </div>
+          <span class="hidden sm:inline text-[11px] font-mono tracking-wider">Audio</span>
+        </button>
+
+        <!-- Global Currency Selector -->
+        <select id="global-currency-select" class="bg-black/60 border border-neutral-700 rounded-lg px-2 py-1.5 text-xs text-neutral-300 font-mono focus:border-[#d4af37] focus:outline-none cursor-pointer">
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="EGP">EGP (E£)</option>
+          <option value="ETH">ETH (Ξ)</option>
+        </select>
+
+        <!-- MetaMask Quick-Connect Nav Badge -->
+        <button id="nav-connect-wallet-btn" class="hidden md:flex items-center px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/60 hover:border-indigo-400 text-xs font-mono text-neutral-300 transition">
+          <span class="w-2 h-2 rounded-full bg-indigo-500 mr-2"></span>
+          <span>Connect Web3</span>
+        </button>
+
+        <!-- Commission CTA -->
+        <button class="trigger-bespoke-order px-4 py-2 bg-gradient-to-r from-[#d4af37] to-[#e6ca65] hover:from-[#c49e2e] hover:to-[#d4af37] text-black font-semibold text-xs uppercase tracking-wider rounded-lg transition shadow-lg shadow-[#d4af37]/20 flex items-center space-x-1.5" data-id="look-01">
+          <span>Order Bespoke</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-neutral-400 hover:text-white rounded-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-nav" class="lg:hidden hidden bg-[#0c0c12] border-b border-neutral-800 p-4 space-y-3 text-xs tracking-wider uppercase">
+      <a href="#runway" class="block py-2 text-neutral-300 hover:text-[#d4af37]">The Collection</a>
+      <a href="#interactive-3d" class="block py-2 text-neutral-300 hover:text-[#d4af37]">3D Atelier Virtual Fitting</a>
+      <a href="#craft" class="block py-2 text-neutral-300 hover:text-[#d4af37]">Textile Science</a>
+      <a href="#payment-methods" class="block py-2 text-neutral-300 hover:text-[#d4af37]">Wise & Web3 Payments</a>
+      <button class="open-designer-hub-btn block w-full text-left py-2 text-[#d4af37]">Designer Setup Hub</button>
+    </div>
+  </header>
+
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 px-4">
+    <!-- Ambient glowing backgrounds -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4af37]/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-indigo-900/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="relative max-w-5xl mx-auto text-center space-y-6 z-10">
+      <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono tracking-widest text-[#d4af37] uppercase">
+        <span>Haute Couture</span>
+        <span>•</span>
+        <span>Made-to-Measure Architectural Tailoring</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-extralight tracking-tight text-white leading-tight">
+        The Geometry of <span class="font-serif italic font-normal gold-gradient-text">Silhouette</span>
+      </h1>
+
+      <p class="text-neutral-400 font-serif italic text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
+        Sculptural drapery, fluid bias cuts, and uncompromising atelier craftsmanship by designer <strong class="text-neutral-200 not-italic font-display font-medium">Laila Khalil</strong>.
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs font-semibold uppercase tracking-widest">
+        <a href="#interactive-3d" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-[#d4af37] to-[#e6ca65] hover:from-[#c49e2e] hover:to-[#d4af37] text-black rounded-xl transition shadow-xl shadow-[#d4af37]/25 flex items-center justify-center space-x-2">
+          <span>Enter 3D Fitting Room</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+        <a href="#runway" class="w-full sm:w-auto px-8 py-3.5 bg-neutral-900 hover:bg-neutral-800 text-neutral-200 border border-neutral-700 hover:border-neutral-500 rounded-xl transition flex items-center justify-center space-x-2">
+          <span>Watch Runway Videos</span>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </a>
+      </div>
+
+      <!-- Feature Pill Badges -->
+      <div class="pt-10 grid grid-cols-2 md:grid-cols-4 gap-4 text-left border-t border-neutral-800/80 max-w-4xl mx-auto text-xs">
+        <div class="p-3 bg-neutral-900/40 rounded-xl border border-neutral-800">
+          <span class="text-[#d4af37] font-mono text-[10px] block">01 / SILK & TAILORING</span>
+          <span class="text-white font-medium">Mulberry Silk & Wool Crepe</span>
+        </div>
+        <div class="p-3 bg-neutral-900/40 rounded-xl border border-neutral-800">
+          <span class="text-[#d4af37] font-mono text-[10px] block">02 / 3D WEBGL ENGINE</span>
+          <span class="text-white font-medium">360° Cloth Wave Physics</span>
+        </div>
+        <div class="p-3 bg-neutral-900/40 rounded-xl border border-neutral-800">
+          <span class="text-[#d4af37] font-mono text-[10px] block">03 / MULTI-CURRENCY WIRE</span>
+          <span class="text-white font-medium">Wise Direct IBAN / ACH</span>
+        </div>
+        <div class="p-3 bg-neutral-900/40 rounded-xl border border-neutral-800">
+          <span class="text-[#d4af37] font-mono text-[10px] block">04 / WEB3 ESCROW</span>
+          <span class="text-white font-medium">MetaMask ETH & USDT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION: 3D INTERACTIVE HAUTE COUTURE ATELIER -->
+  <section id="interactive-3d" class="py-16 px-4 bg-gradient-to-b from-[#07070a] via-[#0d0d12] to-[#07070a] border-t border-neutral-800/80">
+    <div class="max-w-7xl mx-auto space-y-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-[10px] uppercase tracking-widest text-[#d4af37] font-semibold font-mono">VIRTUAL FITTING ROOM</span>
+          <h2 class="text-3xl sm:text-4xl font-serif text-white mt-1">Interactive 3D Garment Atelier</h2>
+          <p class="text-xs text-neutral-400 mt-1 max-w-xl">
+            Orbit in full 360°, test physics wave draping in dynamic runway wind, switch luxury textile finishes, and customize stage lighting.
+          </p>
+        </div>
+
+        <!-- 3D Mode Selector Buttons -->
+        <div class="flex items-center space-x-2 bg-neutral-900 p-1 rounded-xl border border-neutral-800 text-xs">
+          <button id="mode-mannequin-btn" class="px-4 py-2 rounded-lg font-medium transition bg-[#d4af37] text-black">
+            3D Mannequin & Gown
+          </button>
+          <button id="mode-carousel-btn" class="px-4 py-2 rounded-lg font-medium transition bg-neutral-800 text-neutral-300 hover:text-white">
+            3D Video Carousel
+          </button>
+        </div>
+      </div>
+
+      <!-- 3D STAGE WRAPPER -->
+      <div class="relative w-full h-[600px] sm:h-[650px] bg-gradient-to-b from-black via-[#0a0a0f] to-black rounded-3xl border border-[#d4af37]/30 shadow-2xl overflow-hidden">
+        
+        <!-- WebGL Canvas Container -->
+        <div id="canvas3d-container" class="w-full h-full cursor-grab active:cursor-grabbing"></div>
+
+        <!-- Canvas Floating HUD Overlay -->
+        <div class="absolute top-4 left-4 z-20 flex flex-col space-y-2 pointer-events-none">
+          <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md border border-[#d4af37]/30 rounded-lg text-[10px] font-mono text-[#d4af37] uppercase tracking-wider flex items-center space-x-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>Real-time Vertex Cloth Physics</span>
+          </div>
+          <span class="text-[11px] text-neutral-400 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded">
+            Drag to Rotate 360° • Scroll to Zoom
+          </span>
+        </div>
+
+        <!-- Top Right Commission Button -->
+        <div class="absolute top-4 right-4 z-20">
+          <button class="trigger-bespoke-order px-4 py-2 bg-gradient-to-r from-[#d4af37] to-[#e6ca65] hover:from-[#c49e2e] hover:to-[#d4af37] text-black font-semibold text-xs uppercase tracking-wider rounded-xl transition shadow-xl shadow-[#d4af37]/30" data-id="look-01">
+            Order This Silhouette
+          </button>
+        </div>
+
+        <!-- Bottom Controls HUD Bar -->
+        <div class="absolute bottom-4 left-4 right-4 z-20 bg-black/75 backdrop-blur-xl border border-white/10 rounded-2xl p-4 flex flex-col md:flex-row items-center justify-between gap-4">
+          
+          <!-- Fabric Selector -->
+          <div class="w-full md:w-auto flex flex-col space-y-1.5">
+            <span class="text-[10px] uppercase font-mono tracking-wider text-neutral-400">Atelier Fabric Emulation:</span>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <button class="fabric-btn px-3 py-1.5 rounded-lg border border-[#d4af37] bg-[#d4af37]/20 text-white font-medium transition" data-fabric="noir-satin">
+                Noir Silk Satin
+              </button>
+              <button class="fabric-btn px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:text-white transition" data-fabric="gold-brocade">
+                Champagne Gold
+              </button>
+              <button class="fabric-btn px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:text-white transition" data-fabric="emerald-velvet">
+                Emerald Velvet
+              </button>
+              <button class="fabric-btn px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:text-white transition" data-fabric="rose-organza">
+                Blush Organza
+              </button>
+              <button class="fabric-btn px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:text-white transition" data-fabric="liquid-silver">
+                Liquid Silver
+              </button>
+            </div>
+          </div>
+
+          <!-- Lighting Studio Selector -->
+          <div class="w-full md:w-auto flex flex-col space-y-1.5">
+            <span class="text-[10px] uppercase font-mono tracking-wider text-neutral-400">Lighting Ambience:</span>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <button class="light-preset-btn px-3 py-1.5 rounded-lg border border-[#d4af37] bg-[#d4af37]/20 text-[#d4af37] font-medium transition" data-preset="runway">
+                Runway Spot
+              </button>
+              <button class="light-preset-btn px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:text-white transition" data-preset="sunset">
+                Golden Hour
+              </button>
+              <button class="light-preset-btn px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:text-white transition" data-preset="midnight">
+                Midnight Noir
+              </button>
+              <button class="light-preset-btn px-3 py-1.5 rounded-lg border border-neutral-700 bg-neutral-900/80 text-neutral-300 hover:text-white transition" data-preset="studio">
+                Studio Clean
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION: RUNWAY VIDEO SHOWCASE (THE 4 DESIGNS) -->
+  <section id="runway" class="py-16 px-4 max-w-7xl mx-auto space-y-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <span class="text-[10px] uppercase tracking-widest text-[#d4af37] font-semibold font-mono">AUTUMN / WINTER 2026 RUNWAY</span>
+        <h2 class="text-3xl sm:text-4xl font-serif text-white mt-1">The Couture Collection</h2>
+        <p class="text-xs text-neutral-400 mt-1 max-w-xl">
+          Captured live on the catwalk. Hover over each design to view fluid motion, test slow-motion catwalk pacing, or inspect full tech pack specifications.
+        </p>
+      </div>
+
+      <div class="flex items-center space-x-3 text-xs">
+        <span class="text-neutral-400">Click video to expand into</span>
+        <span class="px-2.5 py-1 bg-neutral-900 border border-[#d4af37]/40 rounded-lg text-[#d4af37] font-mono">
+          Cinematic 4K Theater
+        </span>
+      </div>
+    </div>
+
+    <!-- RUNWAY VIDEO GRID (Filled by videoController.js) -->
+    <div id="runway-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Injected via videoController.js -->
+    </div>
+  </section>
+
+
+  <!-- SECTION: TEXTILE SCIENCE & ATELIER CRAFTSMANSHIP -->
+  <section id="craft" class="py-16 px-4 bg-gradient-to-b from-[#07070a] via-[#0c0c12] to-[#07070a] border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto space-y-10">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-[10px] uppercase tracking-widest text-[#d4af37] font-semibold font-mono">ATELIER STANDARDS</span>
+        <h2 class="text-3xl font-serif text-white">Sartorial Precision & Material Purity</h2>
+        <p class="text-xs text-neutral-400">
+          Every piece commissioned from Laila Khalil is crafted under stringent haute couture parameters and zero-waste pattern cutting.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+        <div class="p-6 bg-neutral-900/60 rounded-2xl border border-neutral-800 hover:border-[#d4af37]/40 transition space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-[#d4af37]/10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <h3 class="text-base font-serif font-bold text-white">Mono-Material Circularity</h3>
+          <p class="text-neutral-400 leading-relaxed">
+            Crafted with 100% pure silk and fine Italian wool shells, linings, and threads. Mono-material composition guarantees non-toxic biodegradability and closed-loop textile longevity.
+          </p>
+        </div>
+
+        <div class="p-6 bg-neutral-900/60 rounded-2xl border border-neutral-800 hover:border-[#d4af37]/40 transition space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-[#d4af37]/10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879a3 3 0 11-4.242-4.242L12 8.414m0 0L8.414 12"/></svg>
+          </div>
+          <h3 class="text-base font-serif font-bold text-white">ISO 4915 Stitch Discipline</h3>
+          <p class="text-neutral-400 leading-relaxed">
+            Built using single-needle Class 301 lockstitching (12-14 SPI) for structural seams, Class 504 overedge micro-serging on bias hems, and hand-bound horsehair canvas chest canvasing.
+          </p>
+        </div>
+
+        <div class="p-6 bg-neutral-900/60 rounded-2xl border border-neutral-800 hover:border-[#d4af37]/40 transition space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-[#d4af37]/10 border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-base font-serif font-bold text-white">Bespoke Made-to-Measure</h3>
+          <p class="text-neutral-400 leading-relaxed">
+            Every client pattern is drafted individually based on 6 anatomical checkpoints: apex bust, waist curve, high hip, shoulder slope, and total shoe-drop height.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION: PAYMENT INFRASTRUCTURE (WISE & METAMASK) -->
+  <section id="payment-methods" class="py-16 px-4 max-w-7xl mx-auto space-y-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <span class="text-[10px] uppercase tracking-widest text-[#d4af37] font-semibold font-mono">FINANCIAL ESCROW & SETTLEMENT</span>
+        <h2 class="text-3xl sm:text-4xl font-serif text-white mt-1">Wise Multi-Currency & Web3 MetaMask</h2>
+        <p class="text-xs text-neutral-400 mt-1 max-w-xl">
+          Order directly from London, Paris, New York, Dubai, or Cairo with zero international currency exchange markups.
+        </p>
+      </div>
+
+      <button class="open-designer-hub-btn px-4 py-2 bg-neutral-900 hover:bg-neutral-800 border border-[#d4af37]/40 text-[#d4af37] text-xs font-medium rounded-xl transition flex items-center space-x-1.5">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+        <span>Designer Merchant Setup</span>
+      </button>
+    </div>
+
+    <!-- Dual Payment Cards Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-xs">
+      
+      <!-- WISE CARD -->
+      <div class="p-8 bg-gradient-to-b from-[#0c1410] to-[#08080c] rounded-3xl border border-emerald-500/30 shadow-2xl space-y-6">
+        <div class="flex items-center justify-between pb-4 border-b border-neutral-800">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 font-bold text-xl flex items-center justify-center border border-emerald-500/40">
+              W
+            </div>
+            <div>
+              <h3 class="text-lg font-serif font-bold text-white">Wise Direct Wire Transfer</h3>
+              <p class="text-[11px] text-neutral-400">Multi-Currency Bank Settlement</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-700/40 text-[10px] font-mono">
+            Zero Markups
+          </span>
+        </div>
+
+        <p class="text-neutral-300 leading-relaxed">
+          Clients can transfer funds directly in <strong>USD, EUR, GBP, AED, SAR, or EGP</strong> into Laila Khalil's dedicated multi-currency balances with automated payment reference matching.
+        </p>
+
+        <div class="bg-black/60 p-4 rounded-xl border border-neutral-800 space-y-2 font-mono text-[11px]">
+          <div class="flex justify-between">
+            <span class="text-neutral-500">EUR & Intl IBAN:</span>
+            <span class="text-white">BE68 5390 0754 7034</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-neutral-500">US ACH Routing:</span>
+            <span class="text-white">026073150</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-neutral-500">Wise Tag:</span>
+            <span class="text-[#d4af37]">@lailakhalil_couture</span>
+          </div>
+        </div>
+
+        <button class="trigger-bespoke-order w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold uppercase tracking-wider rounded-xl transition text-center shadow-lg shadow-emerald-900/30" data-id="look-01">
+          Order & Pay with Wise
+        </button>
+      </div>
+
+      <!-- METAMASK CARD -->
+      <div class="p-8 bg-gradient-to-b from-[#0f0e1a] to-[#08080c] rounded-3xl border border-indigo-500/30 shadow-2xl space-y-6">
+        <div class="flex items-center justify-between pb-4 border-b border-neutral-800">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-500/20 text-indigo-400 font-bold text-xl flex items-center justify-center border border-indigo-500/40">
+              Ξ
+            </div>
+            <div>
+              <h3 class="text-lg font-serif font-bold text-white">MetaMask Web3 Crypto</h3>
+              <p class="text-[11px] text-neutral-400">Non-Custodial Decentralized Escrow</p>
+            </div>
+          </div>
+          <span class="px-2.5 py-1 rounded-full bg-indigo-950/80 text-indigo-300 border border-indigo-700/40 text-[10px] font-mono">
+            Instant Finality
+          </span>
+        </div>
+
+        <p class="text-neutral-300 leading-relaxed">
+          Settle your haute couture order using <strong>Ethereum (ETH), USDT, or USDC</strong> directly via browser extension or hardware wallet with zero chargeback risk and automated smart contract receipts.
+        </p>
+
+        <div class="bg-black/60 p-4 rounded-xl border border-neutral-800 space-y-2 font-mono text-[11px]">
+          <div class="flex justify-between">
+            <span class="text-neutral-500">Networks:</span>
+            <span class="text-indigo-300">Ethereum Mainnet • Polygon • Arbitrum</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-neutral-500">Accepted:</span>
+            <span class="text-white">ETH • USDT (ERC20) • USDC</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-neutral-500">Vault:</span>
+            <span class="text-[#d4af37] truncate max-w-[180px]">0x742d35Cc6634C...f44e</span>
+          </div>
+        </div>
+
+        <button class="trigger-bespoke-order w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold uppercase tracking-wider rounded-xl transition text-center shadow-lg shadow-indigo-900/30" data-id="look-01">
+          Order & Pay with MetaMask
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- DESIGNER SPECIAL CALLOUT BANNER -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <div class="p-8 bg-gradient-to-r from-[#171306] via-[#100f07] to-black rounded-3xl border border-[#d4af37]/40 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-2">
+        <div class="flex items-center space-x-2 text-xs text-[#d4af37] font-mono uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-[#d4af37] animate-ping"></span>
+          <span>Designer Laila Khalil Atelier Administration</span>
+        </div>
+        <h3 class="text-2xl font-serif font-bold text-white">Haven't Activated Wise or MetaMask Yet?</h3>
+        <p class="text-xs text-neutral-400 max-w-xl">
+          Open the dedicated Setup Hub to follow our step-by-step onboarding guide. Connect your Wise tag and MetaMask public Ethereum address to begin receiving customer payments immediately.
+        </p>
+      </div>
+      <button class="open-designer-hub-btn px-6 py-3 bg-gradient-to-r from-[#d4af37] to-[#e6ca65] hover:from-[#c49e2e] hover:to-[#d4af37] text-black font-semibold text-xs uppercase tracking-wider rounded-xl transition shadow-xl shadow-[#d4af37]/20 flex-shrink-0">
+        Open Designer Setup Hub ↗
+      </button>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="mt-20 border-t border-neutral-900 bg-black/90 py-12 px-4 text-xs text-neutral-500">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col items-center md:items-start space-y-1">
+        <span class="font-display tracking-[0.25em] text-white font-bold text-sm">LAILA KHALIL ATELIER</span>
+        <span class="font-serif italic text-[#d4af37] text-[11px]">Haute Couture • Made-to-Measure • Worldwide Delivery</span>
+      </div>
+
+      <div class="flex items-center space-x-6">
+        <a href="#runway" class="hover:text-neutral-300 transition">Collection</a>
+        <a href="#interactive-3d" class="hover:text-neutral-300 transition">3D Virtual Fitting</a>
+        <a href="#craft" class="hover:text-neutral-300 transition">Textile Science</a>
+        <button class="open-designer-hub-btn hover:text-[#d4af37] transition text-amber-400/80">Designer Portal</button>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p>© 2026 Laila Khalil Haute Couture. All rights reserved.</p>
+        <p class="text-[10px] text-neutral-600 mt-0.5">Engineered with Three.js WebGL & Sovereign Decentralized Commerce.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Bundle -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
